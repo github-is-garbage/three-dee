@@ -1,4 +1,5 @@
-function SyncRotation(Element) {
+function SyncRotation(Element)
+{
 	if (!Element.m_flPitch) return;
 	if (!Element.m_flYaw) return;
 
@@ -13,7 +14,8 @@ function UpdateRotation(Element, DeltaPitch, DeltaYaw)
 	SyncRotation(Element);
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("load", () =>
+{
 	const Plane = document.querySelector("#Plane");
 	if (!Plane) return console.error("No plane");
 
